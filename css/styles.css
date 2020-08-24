@@ -6,8 +6,8 @@
 }
 
 footer{
-  background: #202020;
-  color: #fff;
+  background: #fff;
+  color: #000;
   width: 100%;
 }
 
@@ -15,10 +15,12 @@ footer{
   width: 100%;
   max-width: 1200px;
   margin: auto;
+  padding: 40px;
 }
 
 .container-body{
   display: flex;
+  justify-content: space-between;
 }
 
 .colum1{
@@ -31,6 +33,64 @@ footer{
 
 .colum1 p{
   font-size: 14px;
-  color: #C7C7C7;
   margin-top: 20px;
+}
+
+.colum2{
+  max-width: 400px;
+}
+
+.colum2 h1{
+  font-size: 22px;
+}
+
+.colum2 .row{
+  margin-top: 20px;
+  display: flex;
+}
+
+.colum2 .row label{
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.colum3{
+  max-width: 400px;
+}
+
+.colum3 h1{
+  font-size: 22px;
+}
+
+.row2{
+  margin-top: 20px;
+  display: flex;
+}
+
+.row2 label{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.container-footer{
+  width: 100%;
+  background: #eaeaea;
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+}
+
+.copy a{
+  text-decoration: none;
+}
+
+
+/* Responsive*/
+@media screen and (max-width:1100px){
+  .container-body{
+    display: block;
+  }
+  .colum2, .colum3{
+    padding-top: 40px;
+  }
 }
